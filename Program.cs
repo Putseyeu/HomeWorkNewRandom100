@@ -16,15 +16,14 @@ namespace HomeWorkNewRandom100
             int verificationNumberOne = 3;
             int verificationNumberTwo = 5;
             int sumNumber = 0;
-             
-            for (int i = 0; i < number; i++)
+
+            for (int i = 0; i <= number; i++)
             {
                 if (i % verificationNumberOne == 0 | i % verificationNumberTwo == 0)
                 {
                     sumNumber += i;
                 }
             }
-            sumNumber += number;
             Console.WriteLine($"Сумма чисел кратное {verificationNumberOne} или {verificationNumberTwo} равно {sumNumber}");
         }
     }
